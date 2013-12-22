@@ -1,4 +1,7 @@
 # cmd line args
+if process.argv.length isnt 4
+  console.error('not enough arguments! need a directory to look at and a regex to filter by.')
+  process.exit()
 dir = process.argv[2]
 regex = new RegExp(process.argv[3], \i)
 
