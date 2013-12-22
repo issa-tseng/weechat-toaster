@@ -24,7 +24,7 @@ start = (filename) !->
   room = /#[^.]+/.exec(filename)?[0] ? 'unknown'
   lines(filename)
     .map (.split(/\t/g))
-    .filter(-> it[1] not in [ '--', '<--', '-->' ])
+    .filter(-> it.1 not in [ '--', '<--', '-->' ])
     .map (.2)
     .filter (.match(regex))
     .bufferWithTime(250)
