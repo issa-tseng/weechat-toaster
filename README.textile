@@ -1,0 +1,8 @@
+h1. weechat-toaster
+
+This is a really rudimentary project to solve a simple need and test out RxJS and LiveScript at the same time. I'll really have to go through and try both of them out again in a more complex context before I really get their power.
+
+h2. usage
+
+bc. node lib/toaster.js YOUR_LOG_DIR YOUR_REGEX
+
